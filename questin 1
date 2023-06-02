@@ -1,0 +1,8 @@
+
+// 1a. A string is a sequence of characters that represent text in javascript
+// Types of string
+//         *string replace() : replace a substring
+//         *string index of() : return the first index of occurence of a value
+//         *string to uppercase(): to turn string to uppercase
+//         *string to lowercase(): to turn string to lowercase
+//         *string repeat(): create a new string

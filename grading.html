@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>GRADING SYSTEM</h1>
+        <input type="text" placeholder="Enter your score...." id="scoresInput">
+        <button onclick="myGrade()">GRADE</button>
+        <p id="result"></p>
+   </div> 
+    <script>
+        function myGrade() {
+            var scores = scoresInput.value;
+            if (scores  == ""){
+                result.innerText = "Enter Your Score"
+            }else if(scores <= 59 ){
+                result.innerText = "F"
+            }else if (scores > 60 && scores <= 62){
+                result.innerText = "D-"
+             }else if (scores > 63 && scores <= 66){
+                result.innerText = "D+"
+            }else if (scores > 67 && scores <= 69){
+                result.innerText = "C-"
+            }else if (scores > 70 && scores <= 72){
+                result.innerText = "C+"
+            }else if (scores > 73 && scores <= 76){
+                result.innerText = "C"
+            }else if (scores > 80 && scores <= 82){
+                result.innerText = "B-"
+            }else if (scores > 83 && scores <= 86){
+                result.innerText = "B"
+            }else if (scores > 87 && scores <= 89){
+                result.innerText = "B+"
+            }else if (scores > 90 && scores <= 92){
+                result.innerText = "A-"
+            }else if (scores > 93 && scores <= 96){
+                result.innerText = "A"
+            }else if (scores > 97 && scores <= 100){
+                result.innerText = "A"
+            }else if(typeof (scores) == "string"){
+                result.innerText = "Wrong Input"
+            }
+
+        }
+    </script>
+</body>
+</html>
